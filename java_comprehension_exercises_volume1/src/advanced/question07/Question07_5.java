@@ -58,11 +58,9 @@ public class Question07_5 {
 							+ (int) (prices[i] * amounts[i] * 1.1) + "円");
 		}
 
-		System.out.println("割引前合計:" + prices_sum + "円");
+		System.out.println("合計(税込):" + prices_sum + "円");
 
-		if (prices_sum >= 5000) {
-			prices_sum *= 0.9;
-			System.out.println("割引適用（10%OFF）:" + prices_sum + "円");
-		}
+		prices_sum *= 0.9;
+		System.out.println("割引後合計（税込）:" + prices_sum + "円");
 	}
 }
